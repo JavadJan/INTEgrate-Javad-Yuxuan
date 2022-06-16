@@ -1,12 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 #project-des{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    background-color: skyblue
+    width: 80%;
+    margin: 0 auto;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        border: 2px solid green;
+    }
 }
 
 :root{
@@ -14,4 +24,11 @@ body{
     --integrate-color2:#0170BB;
     --noneBlack-text-color:#5A6E7E;
     --important-messages-color:#F4460F;
+}
+
+
+main{
+    width:90% ;
+    margin: 0 auto;
+    border: 2px solid green;
 }
