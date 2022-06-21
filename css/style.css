@@ -1,24 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#project-des {
-  width: 80%;
-  margin: 0 auto;
-}
-#project-des h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#project-des p {
-  border: 2px solid green;
+  background-color: #f3f5f7;
 }
 
 :root {
@@ -28,8 +15,170 @@ body {
   --important-messages-color:#F4460F;
 }
 
-main {
-  width: 90%;
+p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+header {
+  height: 6rem;
+  background: #0170BB;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.img-box {
+  height: 300px;
+  width: 400px;
   margin: 0 auto;
-  border: 2px solid green;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-box img {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 95%;
+  position: relative;
+  top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.1rem;
+  margin: 0 auto;
+  padding-top: 0rem;
+  padding-right: 10px;
+}
+main aside {
+  position: fixed;
+  width: 300px;
+  grid-area: aside;
+  margin: 1rem;
+  padding: 10px;
+  background-color: white;
+  height: 90vh;
+}
+main aside .logo-box {
+  width: 100%;
+  height: 240px;
+}
+main aside .logo-box img {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+}
+main aside ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  line-height: 30px;
+  padding: 10px;
+}
+main aside ul li {
+  padding: 10px;
+  display: flex;
+}
+main aside ul li img {
+  height: 30px;
+  margin-right: 15px;
+}
+main aside ul li span a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+main aside ul li:hover {
+  background-color: var(--integrate-color1);
+}
+main .container {
+  margin-left: 300px;
+  grid-area: section;
+  background-color: white;
+}
+main .container #project-des {
+  margin-top: 2rem;
+  width: 100%;
+}
+main .container #project-des .header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+main .container #project-des .header div {
+  padding: 0px 20px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+main .container #project-des .header div h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .container #project-des .header div h5 {
+  text-align: left;
+  line-height: 30px;
+}
+main .container #project-des .header div ul {
+  margin-left: 3rem;
+  padding: 20px;
+}
+main .container #project-des .header div ul li {
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+}
+main .container #project-des .header div ul li img {
+  height: 30px;
+  margin-right: 15px;
+}
+main .container #project-des .header .img-box {
+  position: relative;
+  right: 20px;
+  top: 3rem;
+}
+main .container #project-des .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  padding: 20px;
+  text-align: justify;
+}
+main .container #objective-groups {
+  display: flex;
+  justify-content: space-between;
+  background: #fefefe;
+  border-top: 1px solid rgb(235, 233, 233);
+  border-bottom: 1px solid rgb(235, 233, 233);
+}
+main .container #objective-groups article {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+main .container #objective-groups article h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2.3rem;
+}
+main .container #objective-groups article .lists-object {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+main .container #objective-groups article .lists-object li {
+  list-style-type: none;
+  margin: 15px;
+  margin-left: 2rem;
+}
+main .container #objective-groups .img-box {
+  margin: 2rem;
+  margin-top: 4rem;
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */
