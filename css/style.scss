@@ -31,8 +31,8 @@ header{
     z-index: 1;
 }
 .img-box{
-    height: 300px;
-    width: 400px;
+    height: 350px;
+    width: 500px;
     margin: 0 auto;
     object-fit: cover;
     // border: 2px solid green;
@@ -40,7 +40,6 @@ header{
         height: 100%;
         width: 100%;
     }
-    
 
 }
 main{
@@ -119,6 +118,7 @@ main{
                 grid-template-columns: 5fr 1fr;                
                 div{
                     padding: 0px 20px;
+                    padding-right: 30px;
                     font-family: 'Lato', sans-serif;
                     // font-family: 'Montserrat', sans-serif;
                     // font-family: 'Poppins', sans-serif;
@@ -131,7 +131,6 @@ main{
                     }
                     h5{
                         text-align: left;
-                        // border: 2px solid green;
                         line-height: 30px;
                     }
                     ul{
@@ -155,6 +154,22 @@ main{
                     position: relative;
                     right: 20px;
                     top: 3rem;
+                    border: 1px solid #e9ecef;
+                    display: grid;
+                    row-gap: 10px;
+                    column-gap: 10px;
+                    padding: 5px;
+
+                    
+                    
+                    #img1{
+                        grid-area: 1/1/3/1;
+                       
+                    }
+                    #img2{
+                        grid-area: 1/2/1/2;}
+                    #img3{
+                        grid-area: 2/2/3/3;}
                 }
             }
             .details{
