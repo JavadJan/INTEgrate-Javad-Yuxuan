@@ -209,8 +209,18 @@ main .container #objective-groups .img-box {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  width: 100%;
+  border-top: 3px solid rgb(243, 244, 243);
+  background-color: rgb(254, 255, 254);
   margin: 0 auto;
+  /* Container around content */
+}
+.timeline .container-timeline {
+  padding-top: 40px;
+  border-radius: 6px;
+  position: relative;
+  background-color: white;
+  width: 45%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -225,16 +235,8 @@ main .container #objective-groups .img-box {
   margin-left: -3px;
 }
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: white;
-  width: 50%;
-}
-
 /* The circles on the timeline */
-.container::after {
+.container-timeline::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -250,11 +252,13 @@ main .container #objective-groups .img-box {
 /* Place the container to the left */
 .left {
   left: 0;
+  margin: 10px 40px;
 }
 
 /* Place the container to the right */
 .right {
   left: 50%;
+  margin: 10px 40px;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -291,7 +295,7 @@ main .container #objective-groups .img-box {
 }
 
 /* The actual content */
-.content {
+.content-timeline {
   padding: 20px 30px;
   background-color: #5DBDB9;
   position: relative;
